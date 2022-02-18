@@ -120,7 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+# Finds our profiles_app and finds the model called UserProfile and use this for all our authentication & user
+# registration in our project
+AUTH_USER_MODEL = 'profiles_app.UserProfile'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
